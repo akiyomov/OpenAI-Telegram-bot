@@ -2,7 +2,15 @@ import logging,time
 
 from aiogram import Bot, Dispatcher, executor, types
 from ask import askQuestion
-API_TOKEN = ''
+import os
+
+# Get the Telegram Bot Token from the environment variable
+API_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+
+# Check if the environment variables are set
+if not API_TOKEN:
+    raise ValueError("Please set the TELEGRAM_BOT_TOKEN environment variables")
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
