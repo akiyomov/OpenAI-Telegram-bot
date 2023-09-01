@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = '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'
+openai.api_key = ''
 
 def askQuestion(question):
     response = openai.Completion.create(
