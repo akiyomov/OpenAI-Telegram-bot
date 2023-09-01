@@ -2,7 +2,7 @@ import logging,time
 
 from aiogram import Bot, Dispatcher, executor, types
 from ask import askQuestion
-API_TOKEN = '5639434424:AAEPIxsyW7MFeGf6Tg9eARh_3_ADUQCvvlg'
+API_TOKEN = ''
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
